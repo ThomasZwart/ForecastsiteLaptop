@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "DataForecast.io";
+}
+
+<div class="container-fluid standard-page">
+    <div class="row align-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center">
+            <img src="~/Images/logo.png" alt="Alternate Text" />
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-center description-div">
+            <h2 class="description">The best forecaster north of the equator, try it now!</h2>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button-div">
+
+            @Html.ActionLink("Get Started", "Index", "Home", new { }, new { @class = "btn btn-blue btn-larger" })
+            @Html.ActionLink("More info", "Index", "Home", new { }, new { @class = "btn btn-blue btn-larger" })
+
+
+        </div>
+
+
+        <div class="col-xs-12 arrow-div hidden-xs">
+            <a id="arrow-down" href="#"><img src="~/Images/arrow.png" alt="Alternate Text" width="100" height="100" /></a>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid step1">
+    <div class="container">
+        <div class="row">
+            Info 1
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid step2">
+    <div class="container">
+        <div class="row">
+            Info 2
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid step3">
+    <div class="container">
+        <div class="row">
+            Info 3
+        </div>
+    </div>
+</div>
+
+
+
+

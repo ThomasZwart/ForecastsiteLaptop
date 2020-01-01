@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "DataForecast.io";
+}
+<div class="container-fluid standard-page">
+    <div class="container">
+        <div id="chart">
+
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-4 col-xs-4">
+                <label id="fileLabel" for="files" class="btn btn-blue btn-larger">Select File</label>
+                <input id="files" multiple type="file">
+                <a id="read-file" class="btn-larger btn btn-grey">Read File</a>
+                <a id="plot" class="btn-larger btn btn-blue">Plot now</a>
+                <label class="checkbox-div">
+                    Does data contain ID's?
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+    
+}
