@@ -1,5 +1,8 @@
 ﻿/*General css*/
 
+body {
+    background: #e9f2f1;
+}
 
 a {
     color: inherit;
@@ -38,17 +41,19 @@ a:focus {
 .standard-page {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    background-image: url("https://rawgraphs.io/wp-content/themes/raw-theme/images/cover-bg-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     padding-top: 20vh;
     padding-bottom: 2vh;
     position: relative;
 }
 
+
+.body-content{
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+}
 
 /*Buttons*/
 
@@ -115,21 +120,20 @@ a:focus {
 }
 
 .nav.navbar-nav li a {
-    color: #555960;
+    color: #1f2121;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    margin: 15px 20px 20px 20px;
+    font-size: 18px;
+    margin: 20px 20px 20px 20px;
     padding: 0;
-    font-weight: bold;
 }
 
-    .nav.navbar-nav li a:hover {
-        color: #555960;
-    }
+.nav.navbar-nav li a:hover {
+    color: #555960;
+}
 
 .navbar-header a.navbar-brand {
     color: #555960;
-    font-size: 30px;
+    font-size: 40px;
 }
 
     .navbar-header a.navbar-brand:hover {
@@ -173,27 +177,68 @@ a:focus {
 
 
 
-/*Software*/
 
-.checkbox {
-    float: right;
-    right: 80px;
-    width: 20px;
-    height: 20px;
-}
-
-label[for="id-checkbox"] {
-    color: #555960;
-    font-size: 18px;
-}
+/* Forecast page */
 
 #files {
     display: none;
 }
 
-#read-file {
+#fileLabel {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
 }
+
+#read-file {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.forecast-left-tools{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    align-content: center;
+    padding:0;
+}
+
+.forecast-page {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    background-color: #f5f8fc;
+}
+
+.analyse-screen{
+    height: 100%;
+    padding: 0;
+}
+
+#chart {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 47%;
+    outline: 1px solid black;
+    display: inline-block;
+    height: 200px;
+}
+
+#chart2 {
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 47%;
+    outline: 1px solid black;
+    height: 200px;
+}
+
+
+
 
 /*Footer*/
 .footer {
@@ -274,22 +319,42 @@ label[for="id-checkbox"] {
 }
 
 
-/* Forecast page */
-#chart{
-    outline: 1px solid black;
-    display: block;
 
-}
 
 
 
 .navbar {
     outline: 1px solid black;
-    background: #b8e5ff;
     position: static;
 }
 
+.navbar-login {
+    margin-left: 30px;
+}
 
 footer{
     position: static;
+}
+
+.navbar ul.navbar-links{
+    margin-left: 20px;
+}
+
+
+/*Login page*/
+
+.rememberme-checkbox{
+    padding-left: 35px;
+}
+
+.checkbox label{
+    padding: 0;
+}
+
+.login{
+    border-right: 1px solid black;
+}
+
+.register{
+    margin-top: 90px;
 }
