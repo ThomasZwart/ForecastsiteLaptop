@@ -66,7 +66,7 @@ namespace Forecastsite.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Auth(LoginViewModel model, string returnUrl)
+        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
             {
@@ -134,12 +134,26 @@ namespace Forecastsite.Controllers
             }
         }
 
+        [AllowAnonymous]
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult Register(PreRegisterViewModel model)
+        {
+            return View();
+        }
+
         //
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Register(RegisterViewModel model)
+        public async Task<ActionResult> RegisterUser(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -159,9 +173,9 @@ namespace Forecastsite.Controllers
                 }
                 AddErrors(result);
             }
-
+            return RedirectToAction("Index", "Forecast");
             // If we got this far, something failed, redisplay form
-            return View(model);
+          //  return View(model);
         }
 
         //

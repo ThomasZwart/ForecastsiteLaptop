@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "testview";
+    Layout = "~/Views/Platform/_Layout.cshtml";
+}
+
+<div class="container-fluid platform">
+    <div class="col-xs-3 forecast-left-tools">
+        <label id="fileLabel" for="files" class="btn btn-blue btn-larger">Select File</label>
+        <input id="files" multiple type="file">
+
+        <a id="read-file" class="btn-larger btn btn-grey">Read File</a>
+
+    </div>
+    <div class="col-xs-9 analyse-screen">
+        <div id="chart">
+        </div>
+        <div id="chart2">
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+@section scripts
+{
+
+}
+

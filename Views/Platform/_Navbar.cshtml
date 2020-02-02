@@ -1,0 +1,15 @@
+﻿
+<div class="navbar navbar-inverse navbar-fixed-top navbar-platform">
+    <div class="container">
+        <div class="navbar-header">
+            @Html.ActionLink("Forecast", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-links">
+
+                <li>@Html.ActionLink("Analytics", "Index", "Forecast")</li>
+                <li>@Html.ActionLink("Forecasting", "Index", "Forecast")</li>
+            </ul>
+        </div>
+    </div>
+</div>

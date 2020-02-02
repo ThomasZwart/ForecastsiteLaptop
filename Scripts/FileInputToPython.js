@@ -118,7 +118,7 @@
             console.log("Result: ", result);
             console.log("Chunks:", chunks);
             // Send the entire array to a python file on the server who handles the data analysis and recieve the data back from that same file.
-            //ajaxArrayToPython(result);
+            ajaxArrayToPython(result);
             plotData(result);
             // location.reload();
         }
@@ -173,7 +173,6 @@
 });
 
 function plotData(array) {
-    console.log(array)
     x2 = [];
     x3 = [];
     y2 = [];
@@ -229,7 +228,7 @@ function ajaxArrayToPython(array) {
     $.ajax({
         data: JSON.stringify(array),
         type: 'POST',
-        url: 'http://127.0.0.1:5000/process',
+        url: 'https://xtfquxdbf6.execute-api.eu-west-1.amazonaws.com/Stage1/process',
         contentType: "application/json; charset=utf-8",
         beforeSend: function () {
             var d = new Date();

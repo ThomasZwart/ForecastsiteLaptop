@@ -211,7 +211,17 @@ a:focus {
     height: 100vh;
     position: relative;
     padding: 0;
-    background-color: #f5f8fc;
+    background-color: #3d496e;
+    margin-bottom: 20px;
+    border: solid black 2px;
+    border-radius: 3px;
+}
+
+.platform {
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    background-color: #e6f5f5;
 }
 
 .analyse-screen{
@@ -356,5 +366,11 @@ footer{
 }
 
 .register{
-    margin-top: 90px;
+    margin-top: 85px;
 }
+
+.login section{
+    margin-top: 16px;
+}
+
+/* Register page */

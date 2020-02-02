@@ -6,10 +6,15 @@ using System.Web.Mvc;
 
 namespace Forecastsite.Controllers
 {
-    public class ForecastController : Controller
+    public class PlatformController : Controller
     {
         // GET: Forecast
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult testview()
         {
             return View();
         }
