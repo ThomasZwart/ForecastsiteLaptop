@@ -9,15 +9,14 @@
 
 </head>
 <body>
-    @Html.Partial("_NavBar")
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    @Html.Partial("_PlatformNavBar")
+    @RenderBody()
     @Html.Partial("_Footer")
     @Scripts.Render("~/bundles/jquery")
     <script src="/Scripts/plotly.min.js"></script>
     <script src="/Scripts/papaparse.min.js"></script>
     <script src="/Scripts/FileInputToPython.js"></script>
+    <script src="/Scripts/platform.js"></script>
 
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

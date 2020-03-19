@@ -198,10 +198,9 @@
     <Content Include="Images\arrow.png" />
     <Content Include="Images\background.jpeg" />
     <Content Include="Images\logo.png" />
-    <Content Include="Scripts\Analyse.js" />
+    <Content Include="Scripts\platform.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Python Scripts\process.py" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\FileInputToPython.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -256,8 +255,11 @@
     <Content Include="Views\Account\_Register.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Platform\_Layout.cshtml" />
-    <Content Include="Views\Platform\testview.cshtml" />
     <Content Include="Views\Platform\_Navbar.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Platform\backuo.cshtml" />
+    <Content Include="Views\Platform\_PlatformLayout.cshtml" />
+    <Content Include="Views\Platform\_PlatformNavbar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

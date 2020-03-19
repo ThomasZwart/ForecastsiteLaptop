@@ -1,7 +1,7 @@
 ﻿/*General css*/
 
 body {
-    background: #e9f2f1;
+    background: #f7ffff;
 }
 
 a {
@@ -53,6 +53,7 @@ a:focus {
     margin: 0;
     width: 100vw;
     padding: 0;
+    margin-top: 100px;
 }
 
 /*Buttons*/
@@ -68,28 +69,26 @@ a:focus {
     background: #90D7FF;
 }
 
-
-
-    .btn-blue:hover,
-    .btn-blue:focus {
-        color: white;
-        background: #7ecbf7;
-    }
+.btn-blue:hover,
+.btn-blue:focus {
+    color: white;
+    background: #7ecbf7;
+}
 
 .btn-grey {
     color: #555960;
-    background: lightgrey;
+    background: #e0e0e0;
 }
 
-    .btn-grey:hover,
-    .btn-grey:focus {
-        background: #e0e0e0;
-    }
+.btn-grey:hover,
+.btn-grey:focus {
+    background: #e0e0e0;
+}
 
-    .btn-grey:active {
-        color: #555960;
-        border: none;
-    }
+.btn-grey:active {
+    color: #555960;
+    border: none;
+}
 
 .btn-medium {
     width: 130px;
@@ -107,13 +106,8 @@ a:focus {
 
 /*Navbar*/
 
-.top-line {
-    height: 10px;
-    background: #90D7FF;
-}
-
-.navbar {
-    background: transparent;
+.navbar-home {
+    background: #d2f5fa;
     position: fixed;
     border-bottom: none;
     box-shadow: none;
@@ -136,9 +130,9 @@ a:focus {
     font-size: 40px;
 }
 
-    .navbar-header a.navbar-brand:hover {
-        color: #555960;
-    }
+.navbar-header a.navbar-brand:hover {
+    color: #555960;
+}
 
 
 /*Homepage*/
@@ -178,74 +172,7 @@ a:focus {
 
 
 
-/* Forecast page */
 
-#files {
-    display: none;
-}
-
-#fileLabel {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#read-file {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-
-.forecast-left-tools{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    align-content: center;
-    padding:0;
-}
-
-.forecast-page {
-    width: 80%;
-    height: 100vh;
-    position: relative;
-    padding: 0;
-    background-color: #3d496e;
-    margin-bottom: 20px;
-    border: solid black 2px;
-    border-radius: 3px;
-}
-
-.platform {
-    height: 100vh;
-    position: relative;
-    padding: 0;
-    background-color: #e6f5f5;
-}
-
-.analyse-screen{
-    height: 100%;
-    padding: 0;
-}
-
-#chart {
-    margin-top: 2%;
-    margin-left: 2%;
-    width: 47%;
-    outline: 1px solid black;
-    display: inline-block;
-    height: 200px;
-}
-
-#chart2 {
-    display: inline-block;
-    margin-top: 2%;
-    margin-left: 2%;
-    width: 47%;
-    outline: 1px solid black;
-    height: 200px;
-}
 
 
 
@@ -274,14 +201,14 @@ a:focus {
     color: #555960;
 }
 
-    /* Hide the browser's default checkbox */
-    .checkbox-div input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
+/* Hide the browser's default checkbox */
+.checkbox-div input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
 
 /* Create a custom checkbox */
 .checkmark {
@@ -332,11 +259,6 @@ a:focus {
 
 
 
-
-.navbar {
-    outline: 1px solid black;
-    position: static;
-}
 
 .navbar-login {
     margin-left: 30px;

@@ -1,28 +1,38 @@
-﻿@{
-    ViewBag.Title = "DataForecast.io";
+﻿
+@{
+    ViewBag.Title = "testview";
+    Layout = "~/Views/Platform/_PlatformLayout.cshtml";
 }
-<div class="container-fluid forecast-page">
-        <div class="col-xs-3 forecast-left-tools">
-            <label id="fileLabel" for="files" class="btn btn-blue btn-larger">Select File</label>
-            <input id="files" multiple type="file">
-            
-            <a id="read-file" class="btn-larger btn btn-grey">Read File</a>
 
-        </div>
-        <div class="col-xs-9 analyse-screen">
-            <div id="chart">
+<div class="container-fluid platform">
+    <div class="col-xs-3 platform-left-tools">
+        <label id="fileLabel" for="files" class="btn btn-blue btn-larger">Select File</label>
+        <input id="files" multiple type="file">
+        <a id="read-file" class="btn-larger btn btn-grey">Analyse Data</a>
+    </div>
+    <div class="col-xs-9 analyse-screen">
+        <div id="tools" class="col-xs-2">
+            <label for="y-axis-dropbtn">Y-axis</label>
+            <div id="y-axis-dropdown" class="dropdown">
+                <span>Select...</span>
+                <div id="y-axis-dropdown-content" class="dropdown-content">
+                    <a href="#">Ja hallo?</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-            <div id="chart2">
-            </div>
-            
-            
-            
         </div>
+        <div id="charts" class="col-xs-10">
+            <div id="chart1"></div>
+            <div id="chart2"></div>
+        </div>
+    </div>
 
 </div>
 
 
 @section scripts
 {
-    
+
 }
+

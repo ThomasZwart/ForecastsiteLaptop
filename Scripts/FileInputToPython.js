@@ -183,8 +183,8 @@ function plotData(array) {
         y2.push(array[i][3]);
     }
 
-    var width = $("#chart").width();
-    var height = $("#chart").height();
+    var width = $("#chart1").width();
+    var height = $("#chart1").height();
 
     var data = [{
         x: x2,
@@ -217,7 +217,7 @@ function plotData(array) {
         displaylogo: false, displayModeBar: false, scrollZoom: true, modeBarButtonsToRemove: ['hoverCompareCartesian', 'hoverClosestCartesian', 'resetScale2d', 'autoScale2d', 'zoomOut2d', 'zoomIn2d', 'lasso2d', 'select2d', 'sendDataToCloud', 'zoom2d']
     });
 
-    Plotly.newPlot('chart', data, layout, {
+    Plotly.newPlot('chart1', data, layout, {
         displaylogo: false, displayModeBar: false, scrollZoom: true, modeBarButtonsToRemove: ['hoverCompareCartesian', 'hoverClosestCartesian', 'resetScale2d', 'autoScale2d', 'zoomOut2d', 'zoomIn2d', 'lasso2d', 'select2d', 'sendDataToCloud', 'zoom2d']});
 };
 
